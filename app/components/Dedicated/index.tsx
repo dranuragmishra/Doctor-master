@@ -25,7 +25,7 @@ const Dedicated = () => {
                         <Image src="images/dedicated/comma.svg" alt="comma-image" width={200} height={106} className="absolute comma-pos hidden lg:block" />
                         <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">Dedicated to help peoples gastro  needs.</h2>
                         <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">Dr Anurag has breadth & depth of experience, emphasizing the high volume & variety of procedures completed. This heading communicates the exceptional level of expertise & dediction to gastointestinal health.</p>
-                        <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start"> Dr. Anurag Mishra (DM)</p>
+                        <p className="text-2xl font-semibold mt-12 lg:ml-32 text-center lg:text-start"> Dr. Anurag Mishra (DM)</p>
                     </div>
                     
                 </div>

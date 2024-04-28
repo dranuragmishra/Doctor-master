@@ -36,10 +36,11 @@ const Navbar = () => {
           <div className="relative flex h-12 sm:h-20 items-center">
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
+              <img src="/images/navbar/MEDICALclinics.png" className="sm:w-64 w-52 py-2" />
               
 
               <div className="flex flex-shrink-0 items-center border-right overflow-hidden ">
-              <img src="/images/navbar/MEDICALclinics.png" className="w-64 " />
+              {/* <img src="/images/navbar/MEDICALclinics.png" className="w-64 " /> */}
                 {/* <Link
                   href="/"
                   className=" text-lg sm:text-4xl font-semibold text-black"
