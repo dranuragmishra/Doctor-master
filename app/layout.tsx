@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 
 
+
 export const metadata = {
   title: 'Anurag Mishra ',
   description: 'Best Gastroenterologist in Lucknow ',

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TimelineComponent, ItemsDirective, ItemDirective } from '@syncfusion/ej2-react-layouts';
-
+import Degree from '../Degree';
 
 
 
@@ -30,6 +30,7 @@ const Dedicated = () => {
                     
                 </div>
             </div>
+            <Degree />
 
         </div>
     )

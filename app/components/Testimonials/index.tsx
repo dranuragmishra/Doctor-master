@@ -15,41 +15,41 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+        name: "Dr. Arvind Gupta",
+        profession: 'Patient',
+        comment: 'One of the best gastroenterologist in lko i have ever met who not only treats you with the required medicines but also give mental nd emotional strength  which is more important for treating any patient. Diagnosis is excellent.sir is very humble and polite. Thank you again sir for the helping  and support you provided....will recommend everyone for consultation',
+        imgSrc: '/images/testimonial/testimonial_1.png',
+    }, {
+        name: "Ashutosh Dwivedi",
+        profession: 'Patient',
+        comment: 'After having been to 3 other GI doctors I was ready to give up hope. He was very nice, explained my problems to me in 1st visit and came up with a great treatment plan. I feel better than I have in years!! Great doctor',
+        imgSrc: '/images/testimonial/testimonial_3.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
-    },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
-    },
-    {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
-    },
-    {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
-    },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
-    },
+        name: "Saba Sangrar",
+        profession: 'Patient',
+        comment: 'I highly recommend Dr. Anurag for anyone seeking efficient and effective medical care. Grateful for the quick relief and the exceptional care provided by a skilled healthcare professional.',
+        imgSrc: '/images/testimonial/testimonial_2.png',
+    },  
+   
+    // {
+    //     name: "Robert Fox",
+    //     profession: 'CEO, Parkview Int.Ltd',
+    //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    //     imgSrc: '/images/testimonial/user1.svg',
+    // },
+    // {
+    //     name: "Leslie Alexander",
+    //     profession: 'CEO, Parkview Int.Ltd',
+    //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    //     imgSrc: '/images/testimonial/user2.svg',
+    // },
+    // {
+    //     name: "Cody Fisher",
+    //     profession: 'CEO, Parkview Int.Ltd',
+    //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    //     imgSrc: '/images/testimonial/user3.svg',
+    // },
 ]
 
 // CAROUSEL SETTINGS
@@ -58,7 +58,7 @@ const postData: DataType[] = [
 export default class MultipleItems extends Component {
 
     render() {
-        const settings = {
+            const settings = {
             dots: false,
             infinite: true,
             slidesToShow: 3,

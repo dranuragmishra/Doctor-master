@@ -190,13 +190,14 @@ html {
 }
 
 .faq-bg {
-  background-image: url('/images/faq/swirl.png');
+  background-image: url('/images/faq/istockphoto-1186288524-612x612.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  filter: contrast(100%);
 }
-
+/* url('/images/testimonial/boy.svg  '), url('/images/testimonial/girl.svg' */
 .bg-testimonial {
-  background-image: url('/images/wework/elipse.svg'), url('/images/testimonial/boy.svg'), url('/images/testimonial/girl.svg');
+  background-image: url('/images/wework/elipse.svg');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 55%, 84% 26%, 12% 18%;
 }
