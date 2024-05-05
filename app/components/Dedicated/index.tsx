@@ -30,7 +30,7 @@ const Dedicated = () => {
                     
                 </div>
             </div>
-            <Degree />
+            {/* <Degree /> */}
 
         </div>
     )

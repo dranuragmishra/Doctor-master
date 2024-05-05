@@ -14,23 +14,27 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-      name: "Dr. Arvind Gupta",
-      profession: 'Patient',
-      comment: 'One of the best gastroenterologist in lko i have ever met who not only treats you with the required medicines but also give mental nd emotional strength  which is more important for treating any patient. Diagnosis is excellent.sir is very humble and polite. Thank you again sir for the helping  and support you provided....will recommend everyone for consultation',
-      imgSrc: '/images/testimonial/testimonial_1.png',
-  }, {
-      name: "Ashutosh Dwivedi",
-      profession: 'Patient',
-      comment: 'After having been to 3 other GI doctors I was ready to give up hope. He was very nice, explained my problems to me in 1st visit and came up with a great treatment plan. I feel better than I have in years!! Great doctor',
-      imgSrc: '/images/testimonial/testimonial_3.png',
+    name: "Dr. Arvind Gupta",
+    profession: "Patient",
+    comment:
+      "One of the best gastroenterologist in lko i have ever met who not only treats you with the required medicines but also give mental nd emotional strength  which is more important for treating any patient. Diagnosis is excellent.sir is very humble and polite. Thank you again sir for the helping  and support you provided....will recommend everyone for consultation",
+    imgSrc: "/images/testimonial/testimonial_1.png",
   },
   {
-      name: "Saba Sangrar",
-      profession: 'Patient',
-      comment: 'I highly recommend Dr. Anurag for anyone seeking efficient and effective medical care. Grateful for the quick relief and the exceptional care provided by a skilled healthcare professional.',
-      imgSrc: '/images/testimonial/testimonial_2.png',
-  },  
- 
+    name: "Ashutosh Dwivedi",
+    profession: "Patient",
+    comment:
+      "After having been to 3 other GI doctors I was ready to give up hope. He was very nice, explained my problems to me in 1st visit and came up with a great treatment plan. I feel better than I have in years!! Great doctor",
+    imgSrc: "/images/testimonial/testimonial_3.png",
+  },
+  {
+    name: "Saba Sangrar",
+    profession: "Patient",
+    comment:
+      "I highly recommend Dr. Anurag for anyone seeking efficient and effective medical care. Grateful for the quick relief and the exceptional care provided by a skilled healthcare professional.",
+    imgSrc: "/images/testimonial/testimonial_2.png",
+  },
+
   // {
   //     name: "Robert Fox",
   //     profession: 'CEO, Parkview Int.Ltd',
@@ -49,7 +53,7 @@ const postData: DataType[] = [
   //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
   //     imgSrc: '/images/testimonial/user3.svg',
   // },
-]
+];
 // interface DataType {
 //   desc: string;
 //   name: string;
@@ -143,82 +147,94 @@ const index = () => {
   // };
   const settings = {
     dots: false,
-  infinite: true,
-  slidesToShow: 3,
-  // centerMode: true,
-  slidesToScroll: 2,
-  arrows: false,
-  autoplay: false,
-  speed: 500,
-  autoplaySpeed: 2000,
-  cssEase: "linear",
-  responsive: [
+    infinite: true,
+    slidesToShow: 3,
+    // centerMode: true,
+    slidesToScroll: 2,
+    arrows: false,
+    autoplay: false,
+    speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
       {
-          breakpoint: 1200,
-          settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-          }
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
       },
       {
-          breakpoint: 800,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-          }
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
       },
       {
-          breakpoint: 450,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-          }
-      }
-  ]
-};
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="bg-wework py-32">
       <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 ">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
-            We work in several verticals.
+            We treat in several verticals.
           </h3>
-          <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">
+          {/* <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">
             We work in several verticals.
           </h3>
           <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-25 lg:-mr-32 my-2">
             We work in several verticals.
-          </h3>
+          </h3> */}
         </div>
       </div>
       <Slider {...settings}>
-                        {postData.map((items, i) => (
-                            <div key={i} className="relative">
-                              
-                                <div className='bg-white test-sha m-3 p-10 my-20 rounded-3xl'>
-                                  
-                                <div className="flex justify-between">
-                                        <div>
-                                            <h3 className='text-base font-medium pt-4 pb-2'>{items.name}</h3>
-                                            <h3 className='text-xs font-medium  pb-2 opacity-50'>{items.profession}</h3>
-                                        </div>
-                              
-                                    </div>
-                                    <hr style={{ color: "lightgrey" }} />
-                                    <Image src={items.imgSrc} alt={items.imgSrc} width={71} height={71} className="inline-block m-auto absolute test-pos" />
-                                    <h4 className='text-base font-medium text-testColor my-4'>{items.comment}</h4>
-                                   
-                                </div>
-                            </div>
-                        ))}
-                    </Slider>
+        {postData.map((items, i) => (
+          <div key={i} className="relative">
+            <div className="bg-white test-sha m-3 p-10 my-20 rounded-3xl">
+              <div className="flex gap-2 text-center items-center">
+                <div>
+                  <Image
+                    src={items.imgSrc}
+                    alt={items.imgSrc}
+                    width={71}
+                    height={71}
+                    className="inline-block m-auto test-pos mb-2"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-base font-medium p-2">{items.name}</h3>
+                  {/* if you want to use the below text then add pb-0 to the above h3 */}
+                  {/* <h3 className="text-xs font-medium text-left pl-2 opacity-50">
+                    {items.profession}
+                  </h3> */}
+                </div>
+              </div>
+              <hr style={{ color: "lightgrey" }} />
+              <h4
+                className="text-base font-medium text-testColor my-4 h-[120px] overflow-y-auto"
+                // style={{ scrollbarWidth: "none" }}
+              >
+                {items.comment}
+              </h4>
+            </div>
+          </div>
+        ))}
+      </Slider>
 
       {/* {isOpen && <Modal name={name} desc={desc} closeModal={() => setIsOpen(false)} />}
       {/* <Slider {...settings}>
@@ -234,17 +250,17 @@ const index = () => {
                   className="inline-block m-auto"
                 />
                 {/* <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" /> */}
-              {/* </div> */}
-              {/* <h4
+      {/* </div> */}
+      {/* <h4
               //   className="text-3xl pt-14 cursor-pointer"
               //   onClick={() => handleOpenModal(items.name, items.desc)}
               // >
               //   {items.name}
               // </h4>
               // {/* <h3 className='text-2xl font-normal pt-4 pb-2 opacity-50'>{items.desc}</h3> */}
-              {/* </div> */}
-        {/* // ))} */}
-      {/* // </Slider> */} 
+      {/* </div> */}
+      {/* // ))} */}
+      {/* // </Slider> */}
     </div>
   );
 };
