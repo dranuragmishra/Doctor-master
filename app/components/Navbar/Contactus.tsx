@@ -48,7 +48,7 @@ const Contactusform = () => {
       <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
         <div className="lg:hidden">
           <a
-            className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded"
+            className="bg-blue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 mt-2 rounded-full"
             href={"https://calendly.com/191b115/book-you-appointment"}
           >
             <button onClick={openModal}>Book Appointment</button>
@@ -56,7 +56,7 @@ const Contactusform = () => {
         </div>
         <div className="hidden lg:block">
           <a
-            className="justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white"
+            className="justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-blue hover:text-white"
             href={"https://cal.com/nikhil-mishra/15min"}
           >
             <button onClick={openModal}>Book Appointment</button>

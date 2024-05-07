@@ -188,7 +188,7 @@ const index = () => {
   };
 
   return (
-    <div className="bg-wework py-32">
+    <div className="bg-wework sm:py-12" id="services-section">
       <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 ">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
@@ -205,19 +205,19 @@ const index = () => {
       <Slider {...settings}>
         {postData.map((items, i) => (
           <div key={i} className="relative">
-            <div className="bg-white test-sha m-3 p-10 my-20 rounded-3xl">
-              <div className="flex gap-2 text-center items-center">
+            <div className="bg-white m-3 p-10 my-20 rounded-3xl">
+              <div className="flex text-center items-center justify-between gap-4">
                 <div>
                   <Image
                     src={items.imgSrc}
                     alt={items.imgSrc}
                     width={71}
                     height={71}
-                    className="inline-block m-auto test-pos mb-2 rounded-full"
+                    className="inline-block m-auto test-pos mb-2 h-16 w-16 rounded-full object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className=" font-bold text-xl p-2">{items.name}</h3>
+                  <h3 className="font-bold text-xl p-2 text-justify tracking-tighter">{items.name}</h3>
                   {/* if you want to use the below text then add pb-0 to the above h3 */}
                   {/* <h3 className="text-xs font-medium text-left pl-2 opacity-50">
                     {items.profession}
@@ -226,7 +226,7 @@ const index = () => {
               </div>
               <hr style={{ color: "lightgrey" }} />
               <h4
-                className="text-xl font-medium text-testColor my-4 h-[120px] overflow-y-auto"
+                className="text-lg font-medium text-testColor my-4 overflow-y-auto"
                 // style={{ scrollbarWidth: "none" }}
               >
                 {items.comment}

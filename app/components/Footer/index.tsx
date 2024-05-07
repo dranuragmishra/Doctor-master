@@ -11,40 +11,49 @@ interface ProductType {
 const products: ProductType[] = [
   {
     id: 1,
-    section: "Menu",
-    link: ["Home", "Popular", "About", "Contact"],
+    section: "",
+    link: [""],
   },
   {
     id: 2,
-    section: "Category",
-    link: ["Design", "Mockup", "View all", "Log In"],
+    section: "",
+    link: [""],
   },
   {
     id: 3,
-    section: "Pages",
-    link: ["404", "Instructions", "License"],
+    section: "",
+    link: [""],
   },
   {
     id: 4,
-    section: "Others",
-    link: ["Styleguide", "Changelog"],
+    section: "",
+    link: [""],
   },
- 
 ];
 
 const footer = () => {
   return (
     <div className="bg-black -mt-40" id="first-section">
       <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 content-between">
-        <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+        <div className="mt-24 gap-y-10 gap-x-16">
           {/* COLUMN-1 */}
 
-          <div className="col-span-4">
-            <h3 className="text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20">
+          <div className="flex sm:flex-row flex-col gap-6 justify-between items-center">
+            <h3 className="text-white sm:text-4xl text-3xl font-semibold leading-9">
               {" "}
               Dr. Anurag Mishra{" "}
             </h3>
             <div className="flex gap-4">
+              <div className="footer-icons">
+                <Link href="https://whatsapp.com">
+                  <Image
+                    src={"/images/footer/whatsapp.svg"}
+                    alt="whatsapp"
+                    width={18}
+                    height={23}
+                  />
+                </Link>
+              </div>
               <div className="footer-icons">
                 <Link href="https://facebook.com">
                   <Image
@@ -80,7 +89,7 @@ const footer = () => {
 
           {/* CLOUMN-2/3 */}
 
-          {products.map((product) => (
+          {/* {products.map((product) => (
             <div key={product.id} className="group relative col-span-2">
               <p className="text-white text-xl font-extrabold mb-9">
                 {product.section}
@@ -98,7 +107,7 @@ const footer = () => {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
 
