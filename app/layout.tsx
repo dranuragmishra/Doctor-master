@@ -5,13 +5,6 @@ import Footer from './components/Footer/index';
 import { useEffect, useState } from 'react';
 import Preloader from './components/Preloader';
 
-
-
-export const metadata = {
-  title: 'Anurag Mishra ',
-  description: 'Best Gastroenterologist in Lucknow ',
-}
-
 export default function RootLayout({
   children,
 }: {
