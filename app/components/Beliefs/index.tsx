@@ -31,7 +31,7 @@ const Beliefs = () => {
             MORE ABOUT US
           </h2>
           <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug sm:mb-20 mb-5 text-center sm:text-start">
-            <span className="text-blue">New</span> to <br />Dr. Anurag Mishra's
+            <span className="text-blue">New</span> to <br />Dr. Anurag Mishra&apos;s
             Clinic?
           </h3>
           <h5 className="bluish pt-2 mb-5 text-center sm:text-start">
