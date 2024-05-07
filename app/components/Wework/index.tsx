@@ -14,33 +14,33 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    name: "Dr. Arvind Gupta",
+    name: "Gastroenterology Expert",
     profession: "Patient",
     comment:
-      "One of the best gastroenterologist in lko i have ever met who not only treats you with the required medicines but also give mental nd emotional strength  which is more important for treating any patient. Diagnosis is excellent.sir is very humble and polite. Thank you again sir for the helping  and support you provided....will recommend everyone for consultation",
-    imgSrc: "/images/testimonial/testimonial_1.png",
+      "He is trained in the Gastroenterology from the prestigious institute GB Pant (GIPMER) , New Delhi .",
+    imgSrc: "/images/wework/IMG_1.jpg",
   },
   {
-    name: "Ashutosh Dwivedi",
+    name: "Hepatology Expert",
     profession: "Patient",
     comment:
-      "After having been to 3 other GI doctors I was ready to give up hope. He was very nice, explained my problems to me in 1st visit and came up with a great treatment plan. I feel better than I have in years!! Great doctor",
-    imgSrc: "/images/testimonial/testimonial_3.png",
+      "He is trained & proficient in managing all liver related ailments including management of Hepatitis , Cirrhosis & its complications.",
+    imgSrc: "/images/wework/img_5.jpeg",
   },
   {
-    name: "Saba Sangrar",
+    name: "Endoscopy Expert",
     profession: "Patient",
     comment:
-      "I highly recommend Dr. Anurag for anyone seeking efficient and effective medical care. Grateful for the quick relief and the exceptional care provided by a skilled healthcare professional.",
-    imgSrc: "/images/testimonial/testimonial_2.png",
+      "He is proficient in diagnostic & international endoscopic procedures including ERCP & EUS . He has done more than 15000 till date",
+    imgSrc: "/images/wework/img_4.png",
   },
 
-  // {
-  //     name: "Robert Fox",
-  //     profession: 'CEO, Parkview Int.Ltd',
-  //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-  //     imgSrc: '/images/testimonial/user1.svg',
-  // },
+  {
+      name: "GI Emergency & Intensive care Expert",
+      profession: 'CEO, Parkview Int.Ltd',
+      comment: 'He is well trained in management of Gastrointestinal emergencies & gastro patient requiring intensive care treatment with good outcomes.',
+      imgSrc: '/images/wework/img_6.jpeg',
+  },
   // {
   //     name: "Leslie Alexander",
   //     profession: 'CEO, Parkview Int.Ltd',
@@ -213,11 +213,11 @@ const index = () => {
                     alt={items.imgSrc}
                     width={71}
                     height={71}
-                    className="inline-block m-auto test-pos mb-2"
+                    className="inline-block m-auto test-pos mb-2 rounded-full"
                   />
                 </div>
                 <div>
-                  <h3 className="text-base font-medium p-2">{items.name}</h3>
+                  <h3 className=" font-bold text-xl p-2">{items.name}</h3>
                   {/* if you want to use the below text then add pb-0 to the above h3 */}
                   {/* <h3 className="text-xs font-medium text-left pl-2 opacity-50">
                     {items.profession}
@@ -226,7 +226,7 @@ const index = () => {
               </div>
               <hr style={{ color: "lightgrey" }} />
               <h4
-                className="text-base font-medium text-testColor my-4 h-[120px] overflow-y-auto"
+                className="text-xl font-medium text-testColor my-4 h-[120px] overflow-y-auto"
                 // style={{ scrollbarWidth: "none" }}
               >
                 {items.comment}

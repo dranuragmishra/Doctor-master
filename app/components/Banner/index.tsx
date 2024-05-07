@@ -1,6 +1,9 @@
+
 import Image from "next/image";
 
 const Banner = () => {
+
+   
     return (
         <div className='mx-auto max-w-7xl -mb-16 sm:py-10 sm:my-10 px-6 lg:px-8'>
             <div className='grid grid-cols-1 lg:grid-cols-2 my-16'>

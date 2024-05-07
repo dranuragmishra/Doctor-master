@@ -1,3 +1,4 @@
+"use client";
 import Banner from './components/Banner/index';
 import Aboutus from './components/Aboutus/index';
 import Dedicated from './components/Dedicated/index';
@@ -12,10 +13,15 @@ import Testimonials from './components/Testimonials/index';
 import Articles from './components/Articles/index';
 import Joinus from './components/Joinus/index';
 import Insta from './components/Insta/index';
+import * as React from "react";
+
+import {NextUIProvider} from "@nextui-org/react";
 
 
 export default function Home() {
   return (
+    <NextUIProvider>
+    
     <main>
       <Banner />
       <Aboutus />
@@ -33,5 +39,6 @@ export default function Home() {
       {/* <Joinus /> */}
       <Insta />
     </main>
+  </NextUIProvider>
   )
 }

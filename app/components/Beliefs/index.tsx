@@ -18,7 +18,7 @@ const Beliefs = () => {
             {/* Desc */}
           </h5>
           <div className="text-center sm:text-start">
-            <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+            <button className="text-xl py-5 px-14 mt-5  font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
               Book an Appointment
             </button>
           </div>

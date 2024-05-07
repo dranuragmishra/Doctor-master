@@ -57,7 +57,7 @@ const Contactusform = () => {
         <div className="hidden lg:block">
           <a
             className="justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white"
-            href={"https://calendly.com/191b115/book-you-appointment"}
+            href={"https://cal.com/nikhil-mishra/15min"}
           >
             <button onClick={openModal}>Book Appointment</button>
           </a>
