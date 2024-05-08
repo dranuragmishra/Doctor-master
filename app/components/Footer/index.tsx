@@ -45,7 +45,10 @@ const footer = () => {
             </h3>
             <div className="flex gap-4">
               <div className="footer-icons">
-                <Link href="https://whatsapp.com">
+                <Link
+                  href="https://api.whatsapp.com/send?phone=+123456789"
+                  target="_blank"
+                >
                   <Image
                     src={"/images/footer/whatsapp.svg"}
                     alt="whatsapp"
@@ -55,7 +58,10 @@ const footer = () => {
                 </Link>
               </div>
               <div className="footer-icons">
-                <Link href="https://facebook.com">
+                <Link
+                  href="https://www.facebook.com/anurag.mishra.589"
+                  target="_blank"
+                >
                   <Image
                     src={"/images/footer/vec.svg"}
                     alt="facebook"
@@ -75,7 +81,10 @@ const footer = () => {
                 </Link>
               </div>
               <div className="footer-icons">
-                <Link href="https://instagram.com">
+                <Link
+                  href="https://www.instagram.com/dr.anurag_mishra/"
+                  target="_blank"
+                >
                   <Image
                     src={"/images/footer/instagram.svg"}
                     alt="instagram"
@@ -119,10 +128,7 @@ const footer = () => {
             <div>
               <h3 className="text-center md:text-start text-offwhite text-lg">
                 @{new Date().getFullYear()} - All Rights Reserved by{" "}
-                <Link href="https://adminmart.com/" target="_blank">
-                  {" "}
-                  Dr. Anurag Mishra
-                </Link>
+                <Link href="/"> Dr. Anurag Mishra</Link>
               </h3>
             </div>
             <div className="flex justify-center md:justify-end">

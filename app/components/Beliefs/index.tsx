@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Beliefs = () => {
   return (
     <div className="mx-auto max-w-2xl lg:max-w-7xl sm:mt-0 -mt-16 lg:px-8 rounded-3xl">
@@ -18,9 +20,11 @@ const Beliefs = () => {
             {/* Desc */}
           </h5>
           <div className="text-center sm:text-start">
-            <button className="text-l sm:text-xl py-5 sm:px-14 px-5 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
-              Book an Appointment
-            </button>
+            <Link href={"https://cal.com/nikhil-mishra/15min"}>
+              <button className="text-l sm:text-xl py-5 sm:px-14 px-5 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+                Book an Appointment
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -31,16 +35,18 @@ const Beliefs = () => {
             MORE ABOUT US
           </h2>
           <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug sm:mb-20 mb-5 text-center sm:text-start">
-            <span className="text-blue">New</span> to <br />Dr. Anurag Mishra&apos;s
-            Clinic?
+            <span className="text-blue">New</span> to <br />
+            Dr. Anurag Mishra&apos;s Clinic?
           </h3>
           <h5 className="bluish pt-2 mb-5 text-center sm:text-start">
             {/* Desc */}
           </h5>
           <div className="text-center sm:text-start">
-            <button className="text-l sm:text-xl py-5 sm:px-14 px-5 sm:mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
-              Book a Consultation
-            </button>
+            <Link href={"https://cal.com/nikhil-mishra/15min"}>
+              <button className="text-l sm:text-xl py-5 sm:px-14 px-5 sm:mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+                Book a Consultation
+              </button>
+            </Link>
           </div>
         </div>
       </div>

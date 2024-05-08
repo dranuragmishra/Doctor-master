@@ -11,10 +11,9 @@ const FAQdata = [
   {
     question: `What are the common procedures performed by gastroenterologists?`,
     answer: `Gastroenterologists perform various diagnostic and therapeutic
-      procedures, including endoscopy (such as upper endoscopy and
-      colonoscopy), imaging studies (like ultrasound and MRI), liver
-      biopsies, endoscopic retrograde cholangiopancreatography
-      (ERCP), and capsule endoscopy.`,
+      procedures, including endoscopy (such as upper GI endoscopy and
+      colonoscopy), liver biopsies, endoscopic retrograde cholangiopancreatography
+      (ERCP), Endoscopic ultrasound  (EUS), and capsule endoscopy.`,
   },
   {
     question: "How can I prepare for a gastroenterology procedure?",
@@ -27,10 +26,10 @@ const FAQdata = [
   {
     question:
       " What lifestyle changes can help improve gastrointestinal health?",
-    answer: ` Adopting a healthy lifestyle can significantly improve
+    answer: `Adopting a healthy lifestyle can significantly improve
       gastrointestinal health. This includes maintaining a balanced
       diet rich in fiber, staying hydrated, regular exercise,
-      avoiding smoking and excessive alcohol consumption, managing
+      avoid smoking and excessive alcohol consumption, managing
       stress levels, and practicing good hygiene habits.`,
   },
 ];

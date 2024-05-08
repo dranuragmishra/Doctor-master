@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -12,14 +13,17 @@ const Banner = () => {
                     </div> */}
           <div className="py-3 text-center lg:text-start">
             <h1 className="text-3xl lg:text-7xl font-bold text-darkpurple">
-              Compassionate <span className="font-bold text-[#abcbf9]">Care</span> <br /> For All Your <br /> Stomach
-              Needs.
+              Compassionate{" "}
+              <span className="font-bold text-[#abcbf9]">Care</span> <br /> For
+              All Your <br /> Gastro & Liver Needs.
             </h1>
           </div>
           <div className="my-7 text-center lg:text-start">
-            <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#abcbf9]">
-              Book Appointment
-            </button>
+            <Link href="https://cal.com/nikhil-mishra/15min">
+              <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#abcbf9]">
+                Book Appointment
+              </button>
+            </Link>
           </div>
         </div>
 

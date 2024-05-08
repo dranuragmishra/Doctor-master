@@ -49,7 +49,7 @@ const Contactusform = () => {
         <div className="lg:hidden">
           <a
             className="bg-blue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 mt-2 rounded-full"
-            href={"https://calendly.com/191b115/book-you-appointment"}
+            href={"https://cal.com/nikhil-mishra/15min"}
           >
             <button onClick={openModal}>Book Appointment</button>
           </a>
