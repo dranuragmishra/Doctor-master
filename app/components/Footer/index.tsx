@@ -46,7 +46,7 @@ const footer = () => {
             <div className="flex gap-4">
               <div className="footer-icons">
                 <Link
-                  href="https://api.whatsapp.com/send?phone=+123456789"
+                  href="https://api.whatsapp.com/send?phone=919219307327"
                   target="_blank"
                 >
                   <Image
