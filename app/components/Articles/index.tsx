@@ -1,8 +1,9 @@
-"use client";
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
-import React, { Component } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 // CAROUSEL DATA
 
@@ -38,131 +39,115 @@ const postData: DataType[] = [
     imgSrc: "/images/articles/A2.jpeg",
     link: "https://www.ijcmr.com/uploads/7/7/4/6/77464738/ijcmr_1273_march_4.pdf",
   },
-  // {
-  //     time: "5 min",
-  //     heading: 'We Launch Delia',
-  //     heading2: 'Webflow this Week!',
-  //     heading3:'f',
-  //     name: "Published on Startupon",
-  //     date: 'August 19, 2021',
-  //     imgSrc: '/images/articles/article3.png',
-  //     link: " ",
-  // },
-  // {
-  //     time: "5 min",
-  //     heading: 'We Launch Delia',
-  //     heading2: 'Webflow this Week!',
-  //     name: "Published on Startupon",
-  //     date: 'August 19, 2021',
-  //     imgSrc: '/images/articles/article.png',
-  // },
-  // {
-  //     time: "5 min",
-  //     heading: 'We Launch Delia',
-  //     heading2: 'Webflow this Week!',
-  //     name: "Published on Startupon",
-  //     date: 'August 19, 2021',
-  //     imgSrc: '/images/articles/article2.png',
-  // },
-  // {
-  //     time: "5 min",
-  //     heading: 'We Launch Delia',
-  //     heading2: 'Webflow this Week!',
-  //     name: "Published on Startupon",
-  //     date: 'August 19, 2021',
-  //     imgSrc: '/images/articles/article3.png',
-  // },
 ];
 
-// CAROUSEL SETTINGS
+const MultipleItems: React.FC = () => {
+  const sliderRef = useRef<Slider>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-export default class MultipleItems extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      infinite: false,
-      slidesToShow: 2,
-      // centerMode: true,
-      slidesToScroll: 2,
-      arrows: false,
-      autoplay: false,
-      speed: 500,
-      cssEase: "linear",
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
+  const settings = {
+    dots: false,
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: currentSlide,
+    arrows: false,
+    autoplay: false,
+    speed: 500,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
         },
-      ],
-    };
+      },
+    ],
+  };
 
-    return (
-      <div className="bg-white py-20" id="blog-section">
-        <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
-          <div className="text-center">
-            <h3 className="text-blue text-lg font-normal tracking-widest">
-              ARTICLES
-            </h3>
-            <h3 className="text-4xl sm:text-6xl font-semibold">
-              Our latest post.
-            </h3>
-          </div>
+  const nextSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+      setCurrentSlide(currentSlide + 1);
+    }
+  };
 
-          <Slider {...settings}>
-            {postData.map((items, i) => (
-              <div key={i}>
-                <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative">
-                  <Image
-                    src={items.imgSrc}
-                    alt="gaby"
-                    width={380}
-                    height={262}
-                    className="inline-block m-auto"
-                  />
+  const prevSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+      setCurrentSlide(currentSlide - 1);
+    }
+  };
 
-                  <Link href={items.link}>
-                    <h4 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6  rounded-full article-img">
-                      {items.time} read
-                    </h4>
-                  </Link>
-                  <h4 className=" text-2xl text-center font-bold sm:pt-6 pt-12 text-black">
-                    {items.heading}
+  return (
+    <div className="bg-white py-20" id="blog-section">
+      <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
+        <div className="text-center">
+          <h3 className="text-blue text-lg font-normal tracking-widest">
+            ARTICLES
+          </h3>
+          <h3 className="text-4xl sm:text-6xl font-semibold">
+            Our latest post.
+          </h3>
+        </div>
+
+        <Slider {...settings} ref={sliderRef}>
+          {postData.map((items, i) => (
+            <div key={i}>
+              <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative">
+                <Image
+                  src={items.imgSrc}
+                  alt="gaby"
+                  width={380}
+                  height={262}
+                  className="inline-block m-auto"
+                />
+
+                <Link href={items.link}>
+                  <h4 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6  rounded-full article-img">
+                    {items.time} read
                   </h4>
-                  <h4 className="text-2xl text-center font-bold pt-1 text-black">
-                    {items.heading2}
-                  </h4>
-                  <h4 className="text-2xl text-center font-bold pt-1 text-black">
-                    {items.heading3}
-                  </h4>
+                </Link>
+                <h4 className=" text-2xl text-center font-bold sm:pt-6 pt-12 text-black">
+                  {items.heading}
+                </h4>
+                <h4 className="text-2xl text-center font-bold pt-1 text-black">
+                  {items.heading2}
+                </h4>
+                <h4 className="text-2xl text-center font-bold pt-1 text-black">
+                  {items.heading3}
+                </h4>
 
-                  <div>
-                    <h3 className="text-base text-center font-normal pt-6 pb-2 opacity-75">
-                      {items.name}
-                    </h3>
-                    <h3 className="text-base text-center font-normal pb-1 opacity-75">
-                      {items.date}
-                    </h3>
-                  </div>
+                <div>
+                  <h3 className="text-base text-center font-normal pt-6 pb-2 opacity-75">
+                    {items.name}
+                  </h3>
+                  <h3 className="text-base text-center font-normal pb-1 opacity-75">
+                    {items.date}
+                  </h3>
                 </div>
               </div>
-            ))}
-          </Slider>
+            </div>
+          ))}
+        </Slider>
+
+        <div className="flex justify-center mx-auto px-10 mt-4">
+          <button className="bg-darkgrey mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button className="bg-darkgrey ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default MultipleItems;

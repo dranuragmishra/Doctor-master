@@ -18,10 +18,15 @@ const Banner = () => {
               All Your <br /> Gastro & Liver Needs.
             </h1>
           </div>
-          <div className="my-7 text-center lg:text-start">
+          <div className="my-7 text-center  lg:text-start">
             <Link href="https://cal.com/nikhil-mishra/15min">
+              <button className="text-sm md:text-xl font-semibold mr-2 hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#abcbf9]">
+                Book your Appointment
+              </button>
+            </Link>
+            <Link href="tel:917878489267">
               <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#abcbf9]">
-                Book Appointment
+                Call for Appointment
               </button>
             </Link>
           </div>
