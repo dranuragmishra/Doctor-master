@@ -123,7 +123,7 @@ const MultipleItems: React.FC = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="flex justify-center mx-auto px-10 mt-4">
+                <div className="flex justify-center mx-auto px-10 mb-5 sm:hidden">
                     <button className="bg-darkgrey mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
