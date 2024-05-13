@@ -24,7 +24,7 @@ const Banner = () => {
                 Book your Appointment
               </button>
             </Link>
-            <a href="tel:917878489267">
+            <a href="tel:919219307327">
               <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#abcbf9]">
                 Call us for Appointment
               </button>
