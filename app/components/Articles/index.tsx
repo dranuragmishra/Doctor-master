@@ -138,10 +138,10 @@ const MultipleItems: React.FC = () => {
         </Slider>
 
         <div className="flex justify-center mx-auto px-10 mt-4 sm:hidden">
-          <button className="bg-darkgrey mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
+          <button className="bg-[#abcbf9] mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
-          <button className="bg-darkgrey ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
+          <button className="bg-[#abcbf9] ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>

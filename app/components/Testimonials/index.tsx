@@ -95,7 +95,7 @@ const MultipleItems: React.FC = () => {
 
     return (
         <div className="bg-testimonial" id="testimonial-section">
-            <div className='mx-auto max-w-7xl sm:py-4 '>
+            <div className='mx-auto max-w-7xl sm:py-4'>
                 <div className="text-center">
                     <h3 className="text-4xl sm:text-6xl font-bold text-black sm:my-3">See what others are saying.</h3>
                 </div>
@@ -124,10 +124,10 @@ const MultipleItems: React.FC = () => {
                     ))}
                 </Slider>
                 <div className="flex justify-center mx-auto px-10 mb-5 sm:hidden">
-                    <button className="bg-darkgrey mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
+                    <button className="bg-[#abcbf9] mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
-                    <button className="bg-darkgrey ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
+                    <button className="bg-[#abcbf9] ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>

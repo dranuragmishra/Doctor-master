@@ -94,7 +94,7 @@ const Index = () => {
   };
 
   return (
-    <div className="bg-wework py-32">
+    <div className="bg-wework py-32" id="services-section">
       <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
@@ -131,10 +131,10 @@ const Index = () => {
       </Slider>
 
       <div className="flex justify-center mx-auto px-10">
-        <button className="bg-darkgrey mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
+        <button className="bg-[#abcbf9] mr-5 py-3 px-5 rounded-full" onClick={prevSlide}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button className="bg-darkgrey ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
+        <button className="bg-[#abcbf9] ml-5 py-3 px-5 rounded-full" onClick={nextSlide}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
