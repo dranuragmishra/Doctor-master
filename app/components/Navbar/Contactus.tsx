@@ -49,7 +49,7 @@ const Contactusform = () => {
         <div className="lg:hidden">
           <a
             className="bg-blue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 mt-2 rounded-full"
-            href={"https://cal.com/nikhil-mishra/15min"}
+            href={"https://cal.com/dranuragmishra/bookings"}
           >
             <button onClick={openModal}>Book Appointment</button>
           </a>
@@ -57,7 +57,7 @@ const Contactusform = () => {
         <div className="hidden lg:block">
           <a
             className="justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-blue hover:text-white"
-            href={"https://cal.com/nikhil-mishra/15min"}
+            href={"https://cal.com/dranuragmishra/bookings"}
           >
             <button onClick={openModal}>Book Appointment</button>
           </a>

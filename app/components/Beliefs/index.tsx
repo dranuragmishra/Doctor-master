@@ -44,7 +44,7 @@ const Beliefs = () => {
             {/* Desc */}
           </h5>
           <div className="text-center sm:text-start">
-            <Link href={"https://cal.com/nikhil-mishra/15min"}>
+            <Link href={"https://cal.com/dranuragmishra/bookings"}>
               <button className="text-l sm:text-xl py-5 sm:px-14 px-5 sm:mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
                 Book a Consultation
               </button>

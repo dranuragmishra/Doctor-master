@@ -98,7 +98,7 @@ const Index = () => {
       <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
-            We treat in several verticals.
+            Specialisation/Expertis
           </h3>
         </div>
       </div>

@@ -19,7 +19,7 @@ const Banner = () => {
             </h1>
           </div>
           <div className="my-7 text-center lg:text-start flex sm:flex-row flex-col items-center">
-            <Link href="https://cal.com/nikhil-mishra/15min">
+            <Link href="https://cal.com/dranuragmishra/bookings">
               <button className="text-sm md:text-xl font-semibold mr-2 hover:shadow-xl my-3 bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-[#abcbf9]">
                 Book your Appointment
               </button>
