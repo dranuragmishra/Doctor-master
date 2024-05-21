@@ -68,6 +68,21 @@ const Insta = () => {
                     </Link>
                 </div>
 
+                <div className="mx-auto imageContainer sm:hidden">
+                    <Image src="/images/insta/insta8.jpeg" width={306} height={306} alt="instaFour" />
+                    <Link href={"https://www.instagram.com/dr.anurag_mishra/"} target="_blank">
+                        <button
+                            className="hidden text-white font-semibold absolute z-10"
+                            style={{
+                                top: "45%",
+                                right: "45%",
+                            }}
+                        >
+                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} />
+                        </button>
+                    </Link>
+                </div>
+
             </div>
         </div>
     )
