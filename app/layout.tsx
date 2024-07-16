@@ -4,6 +4,12 @@ import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 import { useEffect, useState } from 'react';
 import Preloader from './components/Preloader';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dr Anurag Mishra',
+  description: 'Best Doctor in Lucknow for Gastroenterology',
+};
 
 export default function RootLayout({
   children,
@@ -14,7 +20,6 @@ export default function RootLayout({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating some async operation
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
