@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
               <a href="/">
-              <img src="/images/navbar/MEDICALclinics.png" className="sm:w-64 w-52 py-2" />
+              <img src="/images/navbar/logo1.png" className="sm:w-64 w-52 py-2" />
               </a>
 
               <div className="flex flex-shrink-0 items-center border-right overflow-hidden ">

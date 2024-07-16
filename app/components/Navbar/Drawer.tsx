@@ -28,7 +28,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
           <header className="px-4 py-4 flex items-center">
             <div className="flex flex-shrink-0 items-center border-right">
               <img 
-                src="/images/navbar/MEDICALclinics.png"
+                src="/images/navbar/logo1.png"
                 className="w-44 pt-4"
               />
             </div>
