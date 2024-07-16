@@ -4,12 +4,7 @@ import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 import { useEffect, useState } from 'react';
 import Preloader from './components/Preloader';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Dr Anurag Mishra',
-  description: 'Best Doctor in Lucknow for Gastroenterology',
-};
 
 export default function RootLayout({
   children,
