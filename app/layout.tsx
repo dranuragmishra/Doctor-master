@@ -4,6 +4,10 @@ import ClientLayout from './client_layout';
 export const metadata = {
   title: 'Dr. Anurag Mishra – Expert Gastroenterologist & Hepatologist in Lucknow | ERCP, EUS, Liver Care',
   description: 'Doctor clinic in Lucknow for expert medical care. Our experienced physicians & specialists offer treatments in gastroenterology, cardiology, orthopaedics, and more.',
+  metadataBase: new URL('https://dranuragmishragastro.com/'), 
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

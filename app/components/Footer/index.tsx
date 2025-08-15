@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
+
+
 
 // MIDDLE LINKS DATA
 interface ProductType {
@@ -32,9 +35,13 @@ const products: ProductType[] = [
 ];
 
 const footer = () => {
+  const path = usePathname();
+  const isHome = path === '/';
+
   return (
-    <div className="bg-black -mt-40" id="first-section">
-      <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 content-between">
+    <div className={`bg-black ${isHome ? '-mt-40 pt-48' : ''}`} id="first-section">
+      <div className="bg-black" id="first-section">
+      <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8 content-between">
         <div className="mt-24 gap-y-10 gap-x-16">
           {/* COLUMN-1 */}
 
@@ -145,6 +152,8 @@ const footer = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 
