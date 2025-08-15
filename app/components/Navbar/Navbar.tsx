@@ -6,6 +6,7 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from "./Contactus";
+import Image from 'next/image';
 
 
 interface NavigationItem {
@@ -37,7 +38,7 @@ const Navbar = () => {
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
               <a href="/">
-              <img src="/images/navbar/logo1.png" className="sm:w-64 w-52 py-2" />
+              <Image src="/images/navbar/logo1.png" className="sm:w-64 w-52 py-2" alt="logo" />
               </a>
 
               <div className="flex flex-shrink-0 items-center border-right overflow-hidden ">

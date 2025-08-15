@@ -34,7 +34,7 @@ const products: ProductType[] = [
   },
 ];
 
-const footer = () => {
+const Footer = () => {
   const path = usePathname();
   const isHome = path === '/';
 
@@ -157,4 +157,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
