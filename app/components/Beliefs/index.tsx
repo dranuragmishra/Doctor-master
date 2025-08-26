@@ -22,7 +22,7 @@ const Beliefs = () => {
           <div className="text-center sm:text-start">
             {/* <Link href={"https://cal.com/nikhil-mishra/15min"}> */}
             
-             <a href="tel:919219307327"><button className="text-l sm:text-xl py-5 sm:px-14 px-5 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+             <a href="tel:918200994039"><button className="text-l sm:text-xl py-5 sm:px-14 px-5 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
                 Call us Now!
               </button>
               </a> 
